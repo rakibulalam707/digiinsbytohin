@@ -1,0 +1,1493 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <base href="https://apps.digiins.net/" />
+
+    <script>
+        var base_url = "https://apps.digiins.net/";
+    </script>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title> পুস্তক/ pustak</title>
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Animated -->
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="assets/css/custom.min.css" rel="stylesheet">
+    <link href="assets/css/custom_school.css" rel="stylesheet">
+    <!-- sweetalert -->
+    <link rel="stylesheet" href="assets/css/sweetalert.css" />
+    <!-- Datetime picker -->
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" href="assets/css/daterangepicker.css" />
+    <link rel="stylesheet" href="assets/css/chosen.css" />
+    <link rel="stylesheet" href="assets/css/management.css" />
+
+    <!---- -Start for DataTable ------------>
+
+    <!--<link rel="stylesheet" href="datatables/css/bootstrap.min.css" />-->
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/dataTables.jqueryui.min.css" />
+
+    <!-- <link rel="stylesheet" href="assets/css/buttons.dataTables.min.css" /> -->
+
+    <!-- <link rel="stylesheet" href="assets/css/buttons.bootstrap.min.css" /> -->
+
+    <link rel="stylesheet" href="assets/css/buttons.jqueryui.min.css" />
+
+    <link rel="stylesheet" href="assets/css/responsive.bootstrap.min.css" />
+
+    <!-- for custom style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/attendance.css" />
+
+    <!-- FullCalendar -->
+    <link href="assets/css/fullcalendar.min.css" rel="stylesheet">
+    <link href="assets/css/fullcalendar.print.css" rel="stylesheet" media="print">
+
+    <!-- bootstrap toogle button css -->
+    <link href="assets/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+
+    <!-- for auto complete -->
+    <link rel="stylesheet" href="assets/css/chosen.css">
+
+    <!-- for multi input color change -->
+    <link rel="stylesheet" href="assets/css/bootstrap-tagsinput.css">
+    <!-- for jquery ui css -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+
+    <!-- <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+             <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script> -->
+    <!-- <script type="text/javascript" src="assets/js/dataTables.responsive.min.js"></script> -->
+    	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/637316d9b0d6371309cf0b1b/1ghsp2gse';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
+
+    <!-- End  for DataTable pdf,exel,csv,copy,print  -->
+
+    <style>
+        .dataTables_wrapper .dataTables_processing {
+            background-color: #2A3F54;
+        }
+    </style>
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">    <!-- <div class="col-md-3 left_col menu_fixed" style="overflow-y: scroll;"> -->
+<div class="col-md-3 left_col">
+    <div class="left_col scroll-view">
+        <div class="navbar nav_title" style="border-bottom: 1px solid #3c5369;background: #8f77b0">
+            <a class="site_title" href="#">
+                <i class="fas fa-university">
+                </i>
+                <span>
+                    <img src="assets/images/pustak.png" />
+                </span>
+            </a>
+        </div>
+        <div class="clearfix">
+        </div>
+        <!-- /menu profile quick info -->
+        <br />
+
+        <div class="main_menu_side hidden-print main_menu" id="sidebar-menu">
+            <div class="menu_section">
+                <ul class="nav side-menu">
+                    <li>
+                        <a href="https://apps.digiins.net/">
+                            <i class="glyphicon glyphicon-dashboard"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    
+                        
+                            <li>
+                                <a>
+                                    <i class="fas fa-user"> </i> Student
+                                    <span class="fas fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+
+                                    
+                                        <li>
+                                            <a href="student/registration">
+                                                Registration
+                                            </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="student/student_list">
+                                                Student List
+                                            </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="student/phonebook">
+                                                Phonebook
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="student/student_information">
+                                                Student Information
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="student/student_info">
+                                                XI Student Info
+                                            </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="student/re_admission">
+                                                Re-Admission
+                                            </a>
+                                        </li>
+
+                                    
+                                                                            <li>
+                                            <a href="student/student_cabinet">
+                                                Students Cabinet
+                                            </a>
+                                        </li>
+
+                                    
+                                    <li>
+                                        <a href="https://apps.digiins.net/data_manipulation/upload_csv">
+                                            Upload CSV
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://apps.digiins.net/student/id_card">
+                                            ID Card
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://apps.digiins.net/student/simple_update_ui">
+                                            Simple Update
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        
+                                                    <li>
+                                <a>
+                                    <i class="fas fa-user"> </i> Online Admission
+                                    <span class="fas fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+
+                                    
+                                        <li>
+                                            <a href="online_admission/admission_open">
+                                                Admission Open
+                                            </a>
+                                        </li>
+                                    
+                                                                            <li>
+                                            <a href="online_admission/applicant_list">
+                                                Applicant List
+                                            </a>
+                                        </li>
+
+                                    
+
+                                    <li>
+                                        <a href="online_admission/admit_card">
+                                            Admit Card
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="online_admission/mark_entry">
+                                            Mark Entry
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="online_admission/admission_result">
+                                            Admission Result
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="online_admission/student_report">
+                                            Students Report
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        
+                        
+                            <li>
+                                <a>
+                                    <i class="fas fa-user"> </i> Employee
+                                    <span class="fas fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+
+                                    
+                                        <li>
+                                            <a href="teacher/add_teacher">
+                                                Add Employee
+                                            </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="teacher/employee_list">
+                                                Employee List
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="teacher/id_card">
+                                                ID Card
+                                            </a>
+                                        </li>
+
+                                    
+                                                                    </ul>
+                            </li>
+                        
+                        
+                            <li><a><i class="fas fa-dollar-sign"> </i> Accounts <span class="fas fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    
+                                        <!-- <li><a href="accounts/bill_genera->
+
+                            </li>-->
+                                        <li><a>Bill Generate<span class="fas fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu">
+
+                                                
+                                                    <li><a href="accounts/bill_generate/individual">Individual</a>
+                                                    </li>
+
+                                                
+                                                
+                                                    <li><a href="accounts/bill_generate/groupwise">Group Wise</a></li>
+
+                                                
+                                                
+                                                    <li><a href="accounts/bill_generate/report">Report</a>
+                                                    </li>
+
+                                                
+                                            </ul>
+                                        </li>
+
+                                    
+                                                                            <!-- <li><a href="accounts/bill_collection/payment">Payment</a> -->
+                                        <li>
+                                            <a href="accounts/bill_collection/payment">Bill Collection</a>
+                                        </li>
+                                        <li><a href="accounts/bill_collection/money_receipt">Money Receipt</a>
+                                        
+                                        
+                                            <!-- <li><a>Invoice Print<span class="fas fa-chevron-down"></span></a> 
+                              <ul class="nav child_menu">
+
+                            
+                                <li><a href="accounts/bill_generate/individual_invoice">Individual</a>
+                                </li>
+
+                            
+                            
+                                <li><a href="accounts/bill_generate/groupwise_invoice">Groupwise</a>
+                                </li>
+
+                            
+                              </ul>
+                            </li>-->
+
+                                        
+
+                                        
+                                        <li>
+                                            <a href="accounts/studentLedger">Student Ledger</a>
+                                        </li>
+
+                                                                        
+                                        <li>
+                                            <a href="accounts/studentLedger/studentDueList">Student Due Report</a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="accounts/accountsLedger">Accounts Ledger</a>
+                                        </li>
+
+                                    
+                                    
+                                        <li><a href="accounts/income/income_entry">Income Entry</a>
+                                        </li>
+
+                                    
+                                    
+                                        <li><a href="accounts/expense/expense_entry">Expnese Entry</a>
+                                        </li>
+
+                                    
+                                    <li><a>Report<span class="fas fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+
+                                            <li>
+                                                <a href="accounts/report/day_book">Day Book</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="accounts/report/cash_book">Cash Book</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="accounts/report/bank_book">Bank Ledger Book</a>
+                                            </li>
+
+                                            
+                                                <li><a href="accounts/income/report">Income Report</a></li>
+
+                                            
+                                            
+                                                <li><a href="accounts/expense/report">Expense Report</a> </li>
+
+                                            
+                                            
+                                                <li> <a href="accounts/report">Profit & Loss Report</a></li>
+
+                                            
+                                            
+                                                <li>
+                                                    <a href="accounts/bill_collection/daily_collection_report">Daily Collection Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="accounts/bill_collection/monthly_collection_report">Monthly Collection Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="accounts/report/assets_inventory">Assets Inventory Report</a>
+                                                </li>
+
+                                            
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="accounts/assetsInventory">Assets Inventory</a>
+                                    </li>
+
+                                    
+                                        <li><a>Settings<span class="fas fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu">
+
+                                                
+                                                    <li><a href="accounts/settings/fees">Fees Name</a>
+                                                    </li>
+
+                                                
+                                                
+                                                    <li><a href="accounts/settings/class_fee">Class Fee</a>
+                                                    </li>
+
+                                                
+                                                
+                                                    <li><a href="accounts/settings/add_account">Add Bank Account</a>
+                                                    </li>
+                                                    <li><a href="accounts/settings/fund_transfer">Fund Transfer</a>
+                                                    </li>
+                                                    <li><a href="accounts/settings/account_head">Account Head</a>
+                                                    </li>
+
+                                                
+
+
+                                            </ul>
+                                        </li>
+
+                                    
+                                </ul>
+                            </li>
+
+                        
+                        
+                            <li><a><i class="fas fa-server"></i> Website Management <span class="fas fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+
+                                    <li>
+                                        <a href="management/contact_info/"> Contact Information </a>
+                                    </li>
+
+                                    
+                                        <li>
+                                            <a href="management/notice/notice_list/"> Notice </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="management/syllabus/syllabus_list/"> Syllabus </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="management/routine/class_routine"> Class Routine </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="management/routine/exam_routine"> Exam Routine </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a> Admission <span class="fas fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu">
+
+                                                
+
+                                                    <li>
+                                                        <a href="management/content/admission_info/"> Admission Information</a>
+                                                    </li>
+
+                                                
+                                                
+                                                    <li>
+                                                        <a href="management/content/admission_form/"> Admission Form </a>
+                                                    </li>
+
+                                                
+                                            </ul>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="management/news_events/news_events_list"> News & Events </a>
+                                        </li>
+
+                                    
+                                                                            <li>
+                                            <a href="management/welcome_speech/school_welcome_speech"> Welcome Speech </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="management/slider/slider_list"> Slider/Institution Certificate </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="management/student_info/student_info_list"> Total student </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="management/content/school_committee"> School Comittee </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="management/content/social_url"> Social Link </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a> School Gallery <span class="fas fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu">
+
+                                                
+                                                    <li>
+                                                        <a href="management/content/photo_album/">Photo Album</a>
+                                                    </li>
+
+                                                
+                                                
+                                                    <li>
+                                                        <a href="management/content/upload_photo/">Upload Photo</a>
+                                                    </li>
+
+                                                
+                                                
+                                                    <li>
+                                                        <a href="management/content/video/">Video</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        </li>
+
+                                    
+                                </ul>
+                            </li>
+
+                                                                            <li>
+                                <a>
+                                    <i class="fas fa-file-alt"></i> Certificate
+                                    <span class="fas fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+
+                                    
+                                        <li>
+                                            <a href="certificate/transfer_certificate">
+                                                Transfer Certificate
+                                            </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="certificate/testimonial">
+                                                Testimonial
+                                            </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="certificate/acknowledgement_certificate">
+                                            Acknowledgement Certificate
+                                            </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="certificate/settings">
+                                                Settings
+                                            </a>
+                                        </li>
+
+                                    
+                                </ul>
+                            </li>
+
+                        
+                        
+                            <li><a><i class="fas fa-bezier-curve"></i> Attendance <span class="fas fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+
+                                    
+                                        <li>
+                                            <a><i class="fas fa-users"></i> Student <span class="fas fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu">
+                                                
+                                                    <li>
+                                                        <a href="attendance/take_attendance/"> Take Attendance </a>
+                                                    </li>
+
+                                                
+                                                
+                                                    <li>
+                                                        <a href="attendance/"> Attendane Report</a>
+                                                    </li>
+
+                                                
+
+                                                <li>
+                                                    <a href="attendance/daily_student_attendance_report/"> Daily Report </a>
+                                                </li>
+                                                <li>
+                                                    <a href="attendance/monthly_student_attendance_report/"> Monthly Report </a>
+                                                </li>
+                                                <li>
+                                                    <a href="attendance/attendance_summary/">Attendance Summary </a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a><i class="fas fa-user"></i> Teacher <span class="fas fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu">
+
+
+                                                                                                    <li>
+                                                        <a href="attendance/take_attendance_employee"> Take Attendance</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="attendance/teacher"> Attendane Report</a>
+                                                    </li>
+
+                                                
+
+                                                
+                                                    <li>
+                                                        <a href="attendance/movement_register"> Movement Register</a>
+                                                    </li>
+
+                                                
+                                                                                                    <li>
+                                                        <a href="attendance/leave"> Leave</a>
+                                                    </li>
+
+                                                
+                                                <li>
+                                                    <a href="attendance/daily_teacher_attendance_report"> Daily Report</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="attendance/monthly_teacher_attendance_report"> Monthly Report</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="http://127.0.0.1/attendance_device/slave" target="_blank"> Process Step-1 </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="http://127.0.0.1/attendance_device/slave/sync.php" target="_blank"> Process Step-2 </a>
+                                        </li>
+
+                                    
+                                </ul>
+                            </li>
+
+                        
+                        <!-- Exam -->
+
+                        
+                            <li><a><i class="fas fa-file-excel" aria-hidden="true"></i> Exam <span class="fas fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+
+                                    
+                                        <li>
+                                            <a href="exam/configure_exam"> Configure Exam</a>
+                                        </li>
+
+                                    
+                                    <li>
+                                        <a href="https://apps.digiins.net/exam/seat_plan">
+                                            Seat Plan
+                                        </a>
+                                    </li>
+
+                                    
+                                        <li>
+                                            <a href="exam/admit_card"> Admit Card </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="exam/mark_entry"> Mark Entry </a>
+                                        </li>
+                                    
+                                    <li>
+                                        <a href="exam/csv_mark_entry"> Excel Mark Entry </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="exam/board_mark_entry"> Board Mark Entry </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="exam/mark_process"> Result Process </a>
+                                    </li>
+
+                                    
+                                        <li>
+                                            <a> Marksheet <span class="fas fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu">
+
+                                                
+                                                    <li><a href="exam/indivisual"> Indivisual </a></li>
+
+                                                
+                                                
+                                                    <li><a href="exam/group"> Group </a></li>
+
+                                                
+                                            </ul>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a> Tabulation <span class="fas fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu">
+                                                <li>
+                                                    <a href="exam/subject_tabulation_sheet"> Subject Wise </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="exam/all_tabulation_sheet"> All Subject </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="exam/merit_list"> Merit List </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a> Setting <span class="fas fa-chevron-down"></span></a>
+                                            <ul class="nav child_menu">
+
+                                                
+                                                    <li><a href="settings/exam_name"> Exam Name </a></li>
+
+                                                
+                                                
+                                                    <li><a href="settings/grading"> Grading </a></li>
+
+                                                
+                                            </ul>
+                                        </li>
+                                    
+                                </ul>
+                            </li>
+
+                        
+                        <!-- End Exam -->
+
+                        <!-- Online Exam -->
+<!--                        <li>-->
+<!--                            <a><i class="fas fa-file-excel" aria-hidden="true"></i> Online Exam <span class="fas fa-chevron-down"></span></a>-->
+<!---->
+<!--                            <ul class="nav child_menu">-->
+<!--                                <li>-->
+<!--                                    <a href="online_exam/list"> Exam List </a>-->
+<!--                                </li>-->
+<!---->
+<!--                                <li>-->
+<!--                                    <a href="online_exam/question_bank"> Question Bank </a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+                        <!-- End Online Exam -->
+
+                        
+                            <li><a><i class="fas fa-sms"></i> SMS <span class="fas fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+
+                                    
+                                        <li>
+                                            <a href="sms/present_sms"> Present SMS </a>
+                                        </li>
+                                        <li>
+                                            <a href="sms/absent_sms"> Absent SMS </a>
+                                        </li>
+                                    
+                                    
+                                        <li>
+                                            <a href="sms/student_sms"> Student SMS </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="sms/teacher_sms"> Teacher SMS </a>
+                                        </li>
+
+                                                                        
+                                        <li>
+                                            <a href="sms/single_student_sms"> Single Student SMS </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="sms/others_sms"> Others </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="sms/sms_report"> Report </a>
+                                        </li>
+
+                                    
+                                    
+                                        <li>
+                                            <a href="sms/sms_setting"> SMS Settings </a>
+                                        </li>
+
+                                    
+                                </ul>
+                            </li>
+
+                        
+                        
+                            <li><a><i class="fas fa-cog"></i> Settings <span class="fas fa-chevron-down"></span></a>
+
+                                <ul class="nav child_menu">
+
+                                    
+                                        <li><a href="settings/session"> Session </a></li>
+
+                                    
+                                    
+                                        <li><a href="settings/shift"> Shift </a></li>
+
+                                    
+                                    
+                                        <li><a href="settings/new_class"> Class </a></li>
+
+                                    
+                                    
+                                        <li><a href="settings/section"> Section </a></li>
+
+                                    
+                                                                            <li><a href="settings/group"> Group </a></li>
+
+
+                                    
+                                    
+                                        <li><a href="settings/subject"> Subject </a></li>
+
+                                    
+                                    
+                                        <li><a href="settings/subject_assign"> Class Subject Assign </a></li>
+
+                                    
+                                    
+                                        <li><a href="settings/school_profile"> School Profile</a></li>
+
+
+                                    
+                                    
+                                        <li><a href="settings/designation">Designation</a></li>
+
+                                    
+                                </ul>
+                            </li>
+
+                        
+                                                    <li>
+                                <a>
+                                    <i class="fas fa-user"> </i> ACL
+                                    <span class="fas fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                                                            <li><a href="acl">Role list</a></li>
+
+                                    
+                                                                            <li><a href="acl/role_assign">Role Assign</a></li>
+
+                                    
+                                                                    </ul>
+                            </li>
+                        
+                        
+                            <li>
+                                <a href="home/view_profile"><i class="fas fa-key"></i> Change Password</a>
+                            </li>
+
+                                                <li>
+                            <a href="https://apps.digiins.net/logout">
+                                <i class="fas fa-sign-out-alt">
+                                </i>
+                                Log Out
+                            </a>
+                        </li>
+
+                    
+                </ul>
+            </div>
+        </div>
+</div>
+</div>
+<!-- top navigation -->
+<div class="top_nav">
+   <div class="nav_menu" style="padding:15px 0px">
+      <nav>
+         <div class="nav toggle">
+            <a id="menu_toggle">
+               <i class="fas fa-bars" style="color:#8f77b0;">
+               </i>
+            </a>
+         </div>
+
+         <ul class="nav navbar- nav navbar-right">
+            <div class="row">
+               <div class="col-md-1">
+
+                                                <a href="https://mnphs.digiins.net" target='_blank' title="https://mnphs.digiins.net" >
+                                  <span class="school_title">
+                                    <i class="fa fa-globe"></i>
+                                  </span>
+                              </a>
+                      
+                  
+               </div>
+
+               <div class="col-md-6 text-center">
+                  <span class="school_title">মোহনপুর উচ্চ বিদ্যালয়<br> EIIN:105586</span>
+               </div>
+
+               <div class="col-md-2">
+                  <a href="home/support">
+                     <span class="school_title">
+                        <i class="fas fa-headset"></i> Support
+                     </span>
+                  </a>
+               </div>
+               <div class="col-md-3">
+                  <li class="" style="padding-right: 10px;">
+                     <a aria-expanded="false" class="user-profile dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                        <img alt="" src="assets/images/user.png">
+                        School Admin                        <span class="fas fa-angle-down">
+                        </span>
+                     </a>
+                     <ul class="dropdown-menu dropdown-usermenu pull-right">
+                        <li>
+                           <a href="home/view_profile"> Change Password</a>
+                        </li>
+                        <!-- <li>
+                                                <a href="javascript:;">
+                                                    <span class="badge bg-red pull-right">
+                                                        50%
+                                                    </span>
+                                                    <span>  Settings </span>
+                                                </a>
+                                                </li> -->
+                        <!--  <li>
+                                                <a href="javascript:;"> Help </a>
+                                                </li> -->
+                        <li>
+                           <a href="https://apps.digiins.net/logout">
+                              <i class="fas fa-sign-out pull-right">
+                              </i>
+                              Log Out
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+               </div>
+            </div>
+
+
+         </ul>
+      </nav>
+   </div>
+</div><!-- page content -->
+<style type="text/css">
+  .navbar{background-color: #4caf50}
+  .nav_menu {background: #FFFFFF}
+  .tile-stats {padding: 20px 10px}
+  .title_right{width: 45%;
+  float: right;
+  display: block;}
+
+</style>
+<div class="right_col" role="main">
+    <div class="row">
+        <div class="page-title">
+            <div class="title_left">
+                <h3> ড্যাশবোর্ড </h3>
+                            </div>
+        </div>
+    </div>
+    <!-- top tiles -->
+   <div class="row tile_count">
+      <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="tile-stats" style="background-color: #F44336">
+          <div class="icon" style="color:#1f1c1e57"><i class="fa fa-graduation-cap"></i></div>
+          <div class="count" id="total_student" style="color:white">
+            <img src="assets/images/preloader.jpg" style="width: 50px;" />
+          </div>
+          
+          <h3 style="color:rgba(255, 255, 255, 0.65); font-size: 20px">মোট ছাত্র-ছাত্রী</h3>
+
+        </div>
+      </div>
+
+      <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="tile-stats" style="background-color: #ff9800 !important">
+          <div class="icon" style="color:#1f1c1e57"><i class="fa fa-users"></i></div>         
+          <div class="count" id="total_teacher" style="color:white">
+            <img src="assets/images/preloader.jpg" style="width: 50px;" />  
+          </div>
+
+          <h3 style="color:rgba(255, 255, 255, 0.65); font-size: 20px" >মোট শিক্ষক-শিক্ষিকা</h3>
+        
+        </div>
+      </div>
+
+       <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="tile-stats" style="background-color: #02080259 !important">
+          <div class="icon" style="color:#1f1c1e57"><i class="fa fa-male"></i></div>
+          <div class="count" id="total_stuff" style="color:white">
+            <img src="assets/images/preloader.jpg" style="width: 50px;" />  
+          </div>
+
+          <h3 style="color:rgba(255, 255, 255, 0.65); font-size: 20px" >মোট কর্মচারীগন</h3>
+          
+        </div>
+      </div>
+
+      <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="tile-stats" style="background-color: #2196f3 !important">
+          <div class="icon"  style="color:#1f1c1e57"><i class="fa fa-money"></i></div>         
+          <div class="count" id="total_collection" style="color:white">
+            <img src="assets/images/preloader.jpg" style="width: 50px;" />  
+          </div>
+
+          <h3 style="color:rgba(255, 255, 255, 0.65); font-size: 20px">মোট কালেকশন </h3>
+        
+        </div>
+      </div>
+
+      <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="tile-stats" style="background-color: #4caf50 !important">
+          <div class="icon" style="color:#1f1c1e57"><i class="fa fa-credit-card"></i></div>
+          <div class="count" id="total_expense" style="color:white">
+            <img src="assets/images/preloader.jpg" style="width: 50px;" />
+          </div>
+
+          <h3 style="color:rgba(255, 255, 255, 0.65); font-size: 20px">মোট ব্যয়</h3>
+          
+        </div>
+      </div>
+      
+      <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="tile-stats" style="background-color: #1aa1b7 !important">
+          <div class="icon" style="color:#1f1c1e57"><i class="fa fa-hand-o-up"></i></div>
+          <div class="count" id="total_present_student" style="color:white">
+            <img src="assets/images/preloader.jpg" style="width: 50px;" />
+          </div>
+
+          <h3 style="color:rgba(255, 255, 255, 0.65);font-size: 20px">উপস্থিত ছাত্র-ছাত্রী </h3>
+          
+        </div>
+      </div>
+
+       <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="tile-stats" style="background-color: #b55578c2 !important">
+          <div class="icon" style="color:#1f1c1e57"><i class="fa fa-user"></i></div>
+          <div class="count" id="total_present_teacher" style="color:white">
+            <img src="assets/images/preloader.jpg" style="width: 50px;" />
+          </div>
+
+          <h3 style="color:rgba(255, 255, 255, 0.65); font-size: 20px">উপস্থিত শিক্ষক-শিক্ষিকা </h3>
+          
+        </div>
+      </div>
+
+      <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="tile-stats" style="background-color: #70509ac4 !important">
+          <div class="icon" style="color:#1f1c1e57"><i class="fa fa-male"></i></div>
+          <div class="count" id="total_present_stuff" style="color:white;">
+            <img src="assets/images/preloader.jpg" style="width: 50px;" />
+          </div>
+
+          <h3 style="color:rgba(255, 255, 255, 0.65); font-size: 20px">উপস্থিত কর্মচারীগন</h3>
+          
+        </div>
+      </div>
+
+      
+
+
+</div>
+
+          <!-- /top tiles -->
+
+    <div class="row">
+      <div class="col-md-5 col-sm-5 col-xs-12">
+        <div class="x_panel">
+          <div class="x_title">
+              <h2>Attendance Summery</h2>
+              <div class="clearfix"></div>
+          </div>
+          <div class="x_content">
+              <canvas id="attendance_summery"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-7 col-sm-7 col-xs-12">
+        <div class="x_panel">
+          <div class="x_title">
+            <h2>Calendar Events <small>Sessions</small></h2>
+            <div class="clearfix"></div>
+          </div>
+          <div class="x_content">
+
+            <div id='calendar'></div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+</div>
+<!-- /page content -->
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    // console.log("document loaded");
+
+    //load dashboard data
+    setTimeout(function(){
+      $.ajax({
+        url: "home/dashboard_data",
+        dataType: "JSON",
+        type: "GET",
+        data:{},
+        success: function(response){
+          document.getElementById("total_student").innerHTML = response.total_student;
+          document.getElementById("total_teacher").innerHTML = response.total_teacher;
+          document.getElementById("total_stuff").innerHTML = response.total_stuff;
+          document.getElementById("total_collection").innerHTML = response.total_collection;
+          document.getElementById("total_expense").innerHTML = response.total_expense;
+          document.getElementById("total_present_student").innerHTML = response.total_present_student;
+          document.getElementById("total_present_teacher").innerHTML = response.total_present_teacher;
+          document.getElementById("total_present_stuff").innerHTML = response.total_present_stuff;
+
+          // run pie chart
+          dashboard_pie_chart(response.total_present_teacher, response.total_present_student, response.total_present_stuff);
+        }
+      });
+    }, 2000);
+    
+});
+
+// Pie chart
+function dashboard_pie_chart(total_present_teacher, total_present_student, total_present_stuff){
+
+      if ($('#attendance_summery').length ){
+        
+        // console.log(total_present_teacher);
+        // console.log(total_present_student);
+        // console.log(total_present_stuff);
+
+        var ctx = document.getElementById("attendance_summery");
+
+        var data = {
+          datasets: [{
+            // data: [234, 560, 10],
+            data: [total_present_teacher, total_present_student, total_present_stuff],
+            backgroundColor: [
+            "#b55578c2",
+            "#1aa1b7",
+            "#70509ac4",
+            ],
+            label: 'My dataset' // for legend
+          }],
+          labels: [
+            "শিক্ষক/ শিক্ষিকা",
+            "ছাত্র/ছাত্রী",
+            "কর্মচারী"
+          ]
+        };
+
+        var pieChart = new Chart(ctx, {
+          data: data,
+          type: 'pie',
+          otpions: {
+            legend: false
+          }
+        });
+        
+      }
+  }
+
+</script>
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script> -->
+
+<script>
+  $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script> <!-- footer content -->
+<footer>
+    <div class="pull-right">
+            Innovation School
+        <a href="https://innovationit.com.bd">
+            IIT 2024        </a>
+    </div>
+    <div class="clearfix">
+
+    </div>
+</footer>   
+<!-- /footer content -->  
+</div>
+ </div>
+        
+<!-- calendar modal -->
+    <div id="CalenderModalNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" id="myModalLabel">New Calendar Entry</h4>
+          </div>
+          <div class="modal-body">
+            <div id="testmodal" style="padding: 5px 20px;">
+              <form id="antoform" class="form-horizontal calender" role="form">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Title</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="title" name="title">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Description</label>
+                  <div class="col-sm-9">
+                    <textarea class="form-control" style="height:55px;" id="descr" name="descr"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default antoclose" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary antosubmit">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="CalenderModalEdit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" id="myModalLabel2">Edit Calendar Entry</h4>
+          </div>
+          <div class="modal-body">
+
+            <div id="testmodal2" style="padding: 5px 20px;">
+              <form id="antoform2" class="form-horizontal calender" role="form">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Title</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="title2" name="title2">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Description</label>
+                  <div class="col-sm-9">
+                    <textarea class="form-control" style="height:55px;" id="descr2" name="descr"></textarea>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default antoclose2" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary antosubmit2">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fc_create" data-toggle="modal" data-target="#CalenderModalNew"></div>
+    <div id="fc_edit" data-toggle="modal" data-target="#CalenderModalEdit"></div>
+    <!-- /calendar modal -->
+        
+        <!-- Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        
+        <!-- Datatables -->
+        <script src="assets/js/jquery.dataTables.min.js"></script>
+        <script src="assets/js/dataTables.bootstrap.min.js"></script>
+        <script src="assets/js/dataTables.jqueryui.min.js"></script>
+        
+        <script src="assets/js/dataTables.buttons.min.js"></script>
+        <script src="assets/js/buttons.colVis.min.js"></script>
+        
+        <script src="assets/js/buttons.bootstrap.min.js"></script>
+        <script src="assets/js/buttons.jqueryui.min.js"></script>
+
+        <!-- this is create problem when create link up -->
+        <!-- <script src="assets/js/dataTables.buttons.min.js"></script> -->
+        
+        <script src="assets/js/jszip.min.js"></script>
+        <script src="assets/js/pdfmake.min.js"></script>
+        <script src="assets/js/vfs_fonts.js"></script>
+        
+        <!-- <script src="assets/js/buttons.flash.min.js"></script> -->
+        <script src="assets/js/buttons.html5.min.js"> </script>
+        <script src="assets/js/buttons.print.min.js"></script>
+      <!--   <script src="assets/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script> -->
+        <!-- <script src="assets/js/dataTables.keyTable.min.js"></script> -->
+
+        <script src="assets/js/dataTables.responsive.min.js"></script>
+        <script src="assets/js/responsive.bootstrap.js"></script>
+        <!-- <script src="assets/js/dataTables.scroller.min.js"></script> -->
+        
+        <!-- <script src="assets/js/vfs_fonts.js"></script> -->
+        <!-- date  picker -->
+        <script src="assets/js/moment.min.js" ></script>
+        <script src="assets/js/daterangepicker.js" ></script>
+        <script src="assets/js/bootstrap-datetimepicker.min.js" ></script>
+
+        <!-- Switchery -->
+        <script src="assets/js/bootstrap-toggle.min.js"></script>
+
+        <!-- bootstrap-progressbar -->
+        <!-- <script src="assets/js/bootstrap-progressbar.min.js"></script> -->
+
+        <!-- sweet alert -->
+         <script src="assets/js/sweetalert.min.js"></script>
+        
+        <!-- Custom Theme Scripts -->
+        <script src="assets/js/custom.js"></script>
+
+        <!-- chart -->
+        <script src="assets/js/chart.js"></script>
+        <script src="assets/js/core.js"></script>
+        <script src="assets/js/global.js"></script>
+        
+        <script src="assets/js/settings.js"></script>
+        <script src="assets/js/student.js"></script>
+        <script src="assets/js/online_admission.js"></script>
+        <!-- <script src="assets/js/online_admission_applicant.js"></script> -->
+        <script src="assets/js/re_admission.js"></script>
+
+        <script src="assets/js/exam.js"></script>
+        <script src="assets/js/report.js"></script>
+        <script src="assets/js/teacher.js"></script>
+        <script src="assets/js/attendance.js"></script>
+        <script src="assets/js/chosen.jquery.js"></script>
+      <!--   <script src="assets/js/bootstrap-select.js"></script> -->
+
+        <!-- for account settting js -->
+        <script src="assets/js/account_settings.js"></script>
+        <script src="assets/js/accounts.js"></script>
+        <script src="assets/js/expense.js"></script>
+        <script src="assets/js/income.js"></script>
+        <script src="assets/js/guardian.js"></script>
+        <script src="assets/js/certificate.js"></script>
+        <script src="assets/js/portal.js"></script>
+
+        <!-- this for acl -->
+        <script src="assets/js/acl.js"></script>
+
+        <!-- For management js -->
+        <script type="text/javascript" src="assets/js/management.js"></script>
+        <!-- For sms js -->
+        <script type="text/javascript" src="assets/js/sms.js"></script>
+
+        <!-- for bd location -->
+        <script type="text/javascript" src="assets/js/bd_location.js"></script>
+        <!-- ECharts -->
+        <!-- <script src="assets/js/echarts.min.js"></script> -->
+
+        <!-- FullCalendar -->
+        <!-- <script src="assets/js/moment.min.js"></script> -->
+        <script src="assets/js/fullcalendar.min.js"></script>
+
+        <!-- for auto complete -->
+        <script src="assets/js/chosen.jquery.js" type="text/javascript"></script>
+        <script src="assets/js/init.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- for multi input color change -->
+        <script src="assets/js/bootstrap-tagsinput.js"></script>
+
+        <!-- for jquery ui -->
+        <script src="assets/js/jquery-ui.js"></script>
+        <!-- <script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script> -->
+        <script>
+            // CKEDITOR.replace( 'editor1' );
+        </script>
+         <script src="assets/js/new_school.js"></script>
+         <script src="assets/js/upazila_admin.js"></script>
+         <script src="assets/js/home.js"></script>
+         <script type="text/javascript">
+           function NoSubdomainAlert(){
+            swal({
+                title: "প্রক্রিয়াধীন",
+                text: "আপনার ওয়েবসাইট প্রক্রিয়াধীন রয়েছে। দয়া করে আমাদের সাপোর্ট টিমের সাথে যোগাযোগ করুন।",
+                icon: "error",
+                showCancelButton: false,
+                showConfirmButton: true,
+                confirmButtonText : "ঠিক আছে",
+                closeOnConfirm: true,
+                allowEscapeKey: false
+              });
+           }
+
+           var minDate = new Date();
+            var maxDate = new Date();
+
+            // min date
+            minDate.setMonth(0);
+            minDate.setDate(1);
+
+            // max date
+            maxDate.setMonth(11);
+            maxDate.setDate(31);
+
+             $("#collection_date").datepicker({
+                    dateFormat: 'yy-mm-dd', 
+                    // numberOfMonths: 2,
+                    minDate: minDate,
+                    maxDate: maxDate
+                   
+                }); 
+
+         </script>
+
+    </body>
+</html>
